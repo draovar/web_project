@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Mucis Promotion Website</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="./index.html"><img src="./img/logo.png" alt=""></a>
+            <div class="nav-links", id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+        <div class="text-box">
+            <h1>Worlds Biggest Bullshit</h1>
+            <p>
+                Working in Art an Art. Thanks to the comments tag, 
+                you can leave notes to remind yourself where you left off in the build process.
+            </p>
+            <a href="" class="main-button">Visit us to know more!</a>
+        </div>
+
+    </section>
+
+    
+    <!-- JS for toggle menu buttons-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-220px";
+        }
+    </script>
+</body>
+</html>
