@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Mucis Promotion Website</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="./index.html"><img src="./img_tmp/Telenor_logo.png" alt=""></a>
+            <div class="nav-links", id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="">Media</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- about us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are worlds biggest company!</h1>
+                <p>Fog everywhere. Fog up the river, where it flows among green aits and meadows,
+                fog down the river, where it rolls deified among the tiers of shipping and the
+                waterside pollutions of a great (and dirty) city. </p>
+                <a href="" class="main-button red">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="./img/about.jpg">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Create Your Resume And Download Immediately. No Experience Required. Get More Interviews!
+        <br>The element is clipped into this shape, and displayed.</p>
+        <dic class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </dic>
+        <p>Made with <i class="fa fa-heart-o"></i> Easy Tutorials</p>
+    </section>
+
+    <!-- JS for toggle menu buttons-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-220px";
+        }
+    </script>
+</body>
+</html>
